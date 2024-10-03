@@ -10,6 +10,8 @@ import { TemplatereferencevariableComponent } from './templatereferencevariable/
 import { StructuralbindingComponent } from './structuralbinding/structuralbinding.component';
 import { ParentComponent } from './parent/parent.component';
 import { PipingComponent } from './piping/piping.component';
+import { EmployeserviceService } from './employeservice.service';
+import { EmployelistComponent } from './employelist/employelist.component';
 
 @Component({
   selector: 'app-root',
@@ -25,8 +27,10 @@ import { PipingComponent } from './piping/piping.component';
     TemplatereferencevariableComponent,
     StructuralbindingComponent,
     ParentComponent,
-    PipingComponent
+    PipingComponent,
+    EmployelistComponent
   ],
+  providers: [EmployeserviceService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
