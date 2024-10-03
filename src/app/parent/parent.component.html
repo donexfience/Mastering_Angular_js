@@ -1,0 +1,10 @@
+<p>parent works!</p>
+
+<app-child
+  [parentData]="donex"
+  (childEvent)="message = $event"
+  (childEvent2)="message2 = $event"
+  [newName]="newUser"
+></app-child>
+{{ message }}
+{{message2}}
